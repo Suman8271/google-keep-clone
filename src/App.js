@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -19,6 +19,22 @@ function App() {
         </a>
       </header>
     </div>
+  );
+}
+
+export default App;
+*/
+
+
+//components
+import Home from './components/Home';
+import DataProvider from './context/DataProvider';
+
+function App() {
+  return (
+    <DataProvider>
+      <Home />
+    </DataProvider>
   );
 }
 
